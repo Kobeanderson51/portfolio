@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobe Anderson's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background-image: url('/images/bg-image.jpg'); /* Replace with your hero image */
+            background-size: cover;
+            background-position: center;
+        }
+        #backToTop {
+            display: none; /* Hide button by default */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4 shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-3xl font-bold flex items-center space-x-2">
+                <span>Kobe Anderson</span>
+            </a>
+            <nav class="space-x-4">
+                <a href="#about" class="text-lg font-medium hover:text-gray-300 transition duration-300">About</a>
+                <a href="#projects" class="text-lg font-medium hover:text-gray-300 transition duration-300">Projects</a>
+                <a href="#contact" class="text-lg font-medium hover:text-gray-300 transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white text-center py-40">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold mb-4">Hello, I'm Kobe Anderson</h2>
+            <p class="text-xl mb-6">Web Developer | Currently Pursuing Web Development at Mountainland Technical College</p>
+            <a href="https://www.linkedin.com/in/kobe-anderson/" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <a href="https://mtechcapstone.onrender.com/" class="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" target="_blank" rel="noopener noreferrer">
+                    <div class="relative">
+                        <img src="/images/Capstone.PNG" alt="Capstone Project" class="w-full h-48 object-cover rounded-t-lg transition-transform group-hover:scale-105"/>
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <p class="text-white text-lg font-semibold text-center px-4">Developed using React.js to manage student registrations.</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-gray-900">Capstone Project</h3>
+                    <p class="text-lg text-gray-600">An application designed for student registration and management.</p>
+                </a>
+                <!-- Project 2 -->
+                <a href="https://golf-page-redesign.vercel.app/" class="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" target="_blank" rel="noopener noreferrer">
+                    <div class="relative">
+                        <img src="/images/Golf-app.jpg" alt="Golf-app" class="w-full h-48 object-cover rounded-t-lg transition-transform group-hover:scale-105"/>
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <p class="text-white text-lg font-semibold text-center px-4">Built with Sass and JavaScript for tracking golf scores.</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-gray-900">Golf Tracker</h3>
+                    <p class="text-lg text-gray-600">A web app for tracking golf scores and analyzing performance.</p>
+                </a>
+                <!-- Project 3 -->
+                <a href="https://to-do-app-seven-ebon.vercel.app/" class="bg-white p-6 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 group" target="_blank" rel="noopener noreferrer">
+                    <div class="relative">
+                        <img src="/images/todo-app.PNG" alt="Todo-app" class="w-full h-48 object-cover rounded-t-lg transition-transform group-hover:scale-105"/>
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <p class="text-white text-lg font-semibold text-center px-4">Created with JavaScript to manage daily tasks.</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-gray-900">Todo App</h3>
+                    <p class="text-lg text-gray-600">A task management app with features for creating, updating, and deleting tasks.</p>
+                </a>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">HTML</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">CSS</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Tailwind</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Sass</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">JavaScript</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">React.js</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Next.js</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Node.js</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Express.js</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">PostgreSQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Contact</h2>
+            <div class="flex justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+                    <form action="mailto:Kobeanderson51@gmail.com" method="post" enctype="text/plain">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-lg font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-lg font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Kobe Anderson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-4 right-4 bg-blue-400 text-white p-4 rounded-full shadow-lg hover:from-blue-600 hover:to-teal-600 transition duration-300">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 15l-7-7-7 7"></path></svg>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) { // Show button after scrolling 300px
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            backToTopButton.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
